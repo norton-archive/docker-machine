@@ -11,7 +11,7 @@ start: create
 	docker-machine start dev
 
 stop:
-	docker-machine stop dev
+	-docker-machine stop dev
 
 clean: stop
 	docker-machine rm -f dev
