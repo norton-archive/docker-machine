@@ -5,6 +5,7 @@ all: start
 create:
 	docker-machine create \
 		--driver virtualbox \
+		--virtualbox-memory "2048" \
 		dev
 
 start: create
