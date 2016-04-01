@@ -12,6 +12,9 @@ create:
 start: create
 	docker-machine start dev
 
+restart: create
+	docker-machine restart dev
+
 stop:
 	-docker-machine stop dev
 
