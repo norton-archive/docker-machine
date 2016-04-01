@@ -1,9 +1,9 @@
-.PHONY: all create start stop clean
+.PHONY: all create start restart stop clean
 
 all: start
 
 create:
-	docker-machine create \
+	-docker-machine create \
 		--driver virtualbox \
 		--virtualbox-cpu-count "2" \
 		--virtualbox-memory "5120" \
